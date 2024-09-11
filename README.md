@@ -11,7 +11,7 @@ Project is created with:
 ![image](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white)
 
 
-#### API Used
+### API Used
 
 The API used to obtain anime data was **Jikan API** (version 4.0.0). This is an unofficial MyAnimeList API that allows access to complete information about anime and manga, since MyAnimeList does not offer a complete API by itself.
 
