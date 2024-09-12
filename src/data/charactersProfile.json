@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "name": "Ichigo",
+        "imageUrl": "../assets/ichigo.png"
+    },
+    {
+        "id": 2,
+        "name": "Sagiri",
+        "imageUrl": "../assets/sagiri.png"
+    },
+    {
+        "id": 3,
+        "name": "Laios",
+        "imageUrl": "../assets/laios.png"
+    },
+    {
+        "id": 4,
+        "name": "Erza",
+        "imageUrl": "../assets/erza.png"
+    }
+]
