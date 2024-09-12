@@ -1,0 +1,20 @@
+import ProfileCharacter from "../profile-character/ProfileCharacter";
+import characters from "../../data/charactersProfile.json";
+import styles from './ProfileSelection.module.css';
+const ProfileSelection = () => (
+    <div>
+        <h1>Select your profile to begin</h1>
+        <div className={styles.profilesContainer}>
+            {characters.map(character => (
+                <>
+                    <div>
+                        <ProfileCharacter key={character.id} id={character.id} name={character.name} imageUrl={character.imageUrl} selection={true} backgroundColor="ebony"/>
+                        <p>{character.name}</p>
+                    </div>
+                </>
+            ))}
+        </div>
+    </div>
+);
+
+export default ProfileSelection;

@@ -1,11 +1,14 @@
 :root {
   font-family: "Rubik", sans-serif;
   font-synthesis: none;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   --mandys-pink: #F4B3B3 ;
   --asphalt: #070202; 
   --ebony: #101624;
   --swamp: #002028;
+  color: white;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
 }
 

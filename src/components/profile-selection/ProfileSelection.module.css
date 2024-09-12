@@ -1,0 +1,11 @@
+.profilesContainer {
+    display: flex;
+    flex-direction: row;
+    column-gap: 60px;
+    font-size: 18px;
+}
+
+.profilesContainer h1 {
+    color: white;
+}
+

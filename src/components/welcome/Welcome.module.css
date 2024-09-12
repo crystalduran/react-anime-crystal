@@ -1,0 +1,26 @@
+.welcomeContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.welcomeContainer h1 {
+    font-size: 38px;
+    color: var(--mandys-pink);
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.welcomeContainer h2 {
+    font-size: 25px;
+    font-weight: lighter;
+    margin-bottom: 0;
+}
+
+.welcomeContainer h3 {
+    font-size: 24px;
+    font-weight: lighter;
+    margin-bottom: 40px;
+}

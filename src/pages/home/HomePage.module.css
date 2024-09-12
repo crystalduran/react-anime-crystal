@@ -1,0 +1,36 @@
+body {
+    background-image: url("../../assets/owari-no-seraph-background.webp");
+    background-color: var(--asphalt);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-attachment: fixed; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    padding-top: 100px;
+}
+
+.components-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-weight: lighter;
+    font-size: 40px;
+    margin-bottom: 70px;
+}
+
+footer {
+    margin-top: 130px;
+    color: rgba(234, 240, 246, 0.5);
+}
+
+
+
+

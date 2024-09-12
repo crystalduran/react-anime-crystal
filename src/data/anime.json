@@ -1,64 +1,62 @@
-{
-    "animes": [
-        {
-            "id": 52701,
-            "title": "Dungeon Meshi",
-            "imageUrl": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1028,h=632,fit=crop/mk38GawkozS7eQpO/840_560-4-mv0lElRonoIkjZ6l.jpeg"
-        },
-        {
-            "id": 164,
-            "title": "Mononoke Hime",
-            "imageUrl": "https://images.mubicdn.net/images/film/964/cache-47607-1570446815/image-w1280.jpg?size=800x"
-        },
-        {
-            "id": 269,
-            "title": "Bleach",
-            "imageUrl": "https://dw9to29mmj727.cloudfront.net/social/3373-SocialShareAssets_BleachTYBW_v2_600x314.jpg"
-        },
-        {
-            "id": 26243,
-            "title": "Owari no Seraph",
-            "imageUrl": "https://4.bp.blogspot.com/-pjjDMMsR4Ow/Vm2nxpe6M-I/AAAAAAAAAEA/zTbjP2XiBss/s1600/squad.jpg"
-        },
-        {
-            "id": 8129,
-            "title": "Princess Jellyfish",
-            "imageUrl": "htthttps://otakuusamagazine.com/wp-content/uploads/2021/01/ousa_s2_hero.png"
-        },
-        {
-            "id": 25013,
-            "title": "Akatsuki no Yona",
-            "imageUrl": "https://unafrikieninternet.weebly.com/uploads/1/3/5/3/13536578/akatsuki-no-yona-07_orig.jpg"
-        },
-        {
-            "id": 32182,
-            "title": "Mob Psycho 100",
-            "imageUrl": "https://images-cdn.ubuy.co.id/6YRJ8P7U-mob-psycho-100-poster-mob-reigen-dimple.jpg"
-        },
-        {
-            "id": 9919,
-            "title": "Ao no Exorcist",
-            "imageUrl": "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2013/04/219906-spin-blue-exorcist.jpg?tf=3840x"
-        },
-        {
-            "id": 6702,
-            "title": "Fairy Tail",
-            "imageUrl": "https://i.blogs.es/a9fdde/fairy-tail/840_560.jpeg"
-        },
-        {
-            "id": 14719,
-            "title": "JoJo's Bizarre Adventure",
-            "imageUrl": "https://de7i3bh7bgh0d.cloudfront.net/2017/05/19/16/55/18/e572e9c1-b620-4f8d-8d95-311fc1ce0de6/JOJO-BT-SPLASH.jpg"
-        },
-        {
-            "id": 38691,
-            "title": "Dr. Stone",
-            "imageUrl": "https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2019%2F08%2Fdr-stone-shonen-anime-primer-00.jpg?w=960&cbr=1&q=90&fit=max"
-        },
-        {
-            "id": 242,
-            "title": "Gokusen",
-            "imageUrl": "https://www.tvtime.com/_next/image?url=https%3A%2F%2Fartworks.thetvdb.com%2Fbanners%2Ffanart%2Foriginal%2F81239-2.jpg&w=3840&q=75"
-        }
-    ]
-}
+[
+    {
+        "id": 52701,
+        "title": "Dungeon Meshi",
+        "imageUrl": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1028,h=632,fit=crop/mk38GawkozS7eQpO/840_560-4-mv0lElRonoIkjZ6l.jpeg"
+    },
+    {
+        "id": 164,
+        "title": "Mononoke Hime",
+        "imageUrl": "https://images.mubicdn.net/images/film/964/cache-47607-1570446815/image-w1280.jpg?size=800x"
+    },
+    {
+        "id": 269,
+        "title": "Bleach",
+        "imageUrl": "https://dw9to29mmj727.cloudfront.net/social/3373-SocialShareAssets_BleachTYBW_v2_600x314.jpg"
+    },
+    {
+        "id": 26243,
+        "title": "Owari no Seraph",
+        "imageUrl": "https://4.bp.blogspot.com/-pjjDMMsR4Ow/Vm2nxpe6M-I/AAAAAAAAAEA/zTbjP2XiBss/s1600/squad.jpg"
+    },
+    {
+        "id": 8129,
+        "title": "Princess Jellyfish",
+        "imageUrl": "htthttps://otakuusamagazine.com/wp-content/uploads/2021/01/ousa_s2_hero.png"
+    },
+    {
+        "id": 25013,
+        "title": "Akatsuki no Yona",
+        "imageUrl": "https://unafrikieninternet.weebly.com/uploads/1/3/5/3/13536578/akatsuki-no-yona-07_orig.jpg"
+    },
+    {
+        "id": 32182,
+        "title": "Mob Psycho 100",
+        "imageUrl": "https://images-cdn.ubuy.co.id/6YRJ8P7U-mob-psycho-100-poster-mob-reigen-dimple.jpg"
+    },
+    {
+        "id": 9919,
+        "title": "Ao no Exorcist",
+        "imageUrl": "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2013/04/219906-spin-blue-exorcist.jpg?tf=3840x"
+    },
+    {
+        "id": 6702,
+        "title": "Fairy Tail",
+        "imageUrl": "https://i.blogs.es/a9fdde/fairy-tail/840_560.jpeg"
+    },
+    {
+        "id": 14719,
+        "title": "JoJo's Bizarre Adventure",
+        "imageUrl": "https://de7i3bh7bgh0d.cloudfront.net/2017/05/19/16/55/18/e572e9c1-b620-4f8d-8d95-311fc1ce0de6/JOJO-BT-SPLASH.jpg"
+    },
+    {
+        "id": 38691,
+        "title": "Dr. Stone",
+        "imageUrl": "https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2019%2F08%2Fdr-stone-shonen-anime-primer-00.jpg?w=960&cbr=1&q=90&fit=max"
+    },
+    {
+        "id": 242,
+        "title": "Gokusen",
+        "imageUrl": "https://www.tvtime.com/_next/image?url=https%3A%2F%2Fartworks.thetvdb.com%2Fbanners%2Ffanart%2Foriginal%2F81239-2.jpg&w=3840&q=75"
+    }
+]

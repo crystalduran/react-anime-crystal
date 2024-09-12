@@ -1,0 +1,23 @@
+.containerSpinner {
+    display: flex;
+    flex-direction: column; /* Para que el texto y el spinner estén uno debajo del otro */
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+}
+
+.spinner {
+    animation: spin 2s linear infinite;
+    width: 100px; 
+    height: 100px; 
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
