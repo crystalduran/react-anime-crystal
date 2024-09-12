@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import styles from "./AnimeCard.module.css";
 
 interface AnimeCardProps {
     id: number;
@@ -9,9 +10,9 @@ interface AnimeCardProps {
 const AnimeCard = ({ id, title, imageUrl } : AnimeCardProps) => {
     return (
         <Link to={`/anime/${id}`} style={{ textDecoration: 'none'}}>
-            <div className="container">
+            <div className={styles.animeCardContainer}>
                 <img src={imageUrl} alt={`Portada de ${title}`} />
-                <div className="text">{title}</div>
+                <div className={styles.text}>{title}</div>
             </div>
         </Link>
     );

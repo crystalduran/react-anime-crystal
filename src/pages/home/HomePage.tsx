@@ -4,7 +4,7 @@ import { useProfile } from "../../hooks/useProfile";
 import ProfileSelection from "../../components/profile-selection/ProfileSelection";
 import Welcome from "../../components/welcome/Welcome";
 import Loading from "../../components/loading/Loading";
-import './HomePage.module.css';
+import styles from './HomePage.module.css';
 
 const HomePage = () => {
     const { selectedProfileId } = useProfile();
@@ -23,7 +23,7 @@ const HomePage = () => {
     };
 
     return (
-        <div className="components-container">
+        <div className={styles.componentsContainer}>
             {step === 1 && <ProfileSelection />}
             {step === 2 && selectedProfileId && <Welcome onNext={handleNextStep} />}
             {step === 3 && <Loading onLoadingComplete={handleNextStep} />}

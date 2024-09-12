@@ -1,0 +1,27 @@
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 120px;
+    background-color: var(--ebony);
+    padding: 22px 0;
+    font-size: 20px;
+}
+
+.navLink:hover {
+    color: var(--mandys-pink);
+}
+
+.navLink {
+    text-decoration: none;
+    color: white;
+    padding-bottom: 5px; 
+}
+
+.activeLink {
+    color: var(--mandys-pink); 
+    text-decoration: underline;
+    text-decoration-color: var(--mandys-pink); 
+    text-underline-offset: 18px; 
+}

@@ -1,16 +1,12 @@
-.profile-circle {
-    width: 150px;
-    height: 150px;
+.profileCircle{
     border-radius: 50%;
-    border: 3px solid white;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
-
 }
 
-.profile-circle img {
+.profileCircle img {
     width: 100%;
     height: 100%;
     object-fit: cover; /* Asegura que la imagen cubra el div sin distorsión */

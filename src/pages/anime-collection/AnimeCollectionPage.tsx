@@ -1,40 +1,25 @@
-import { useProfile } from "../../hooks/useProfile";
-import { useNavigate } from "react-router-dom";
-import ProfileCharacter from "../../components/profile-character/ProfileCharacter";
-import characters from "../../data/charactersProfile.json";
 import animeList from "../../data/anime.json";
+import NavBar from "../../components/nav-bar/NavBar";
 import AnimeCard from "../../components/anime-card/AnimeCard";
-
-interface Character {
-    id: number;
-    name: string;
-    imageUrl: string;
-}
+import styles from "./AnimeCollectionPage.module.css";
 
 const AnimeCollectionPage = () => {
-    const { selectedProfileId } = useProfile();
-    const selectedProfile: Character | undefined = characters.find(character => character.id === selectedProfileId);
-    const navigate = useNavigate();
-
-    if (!selectedProfile) {
-        navigate('/');
-        return null;
-    }
-
     return (
         <>
             <div>
-                <nav>
-                    <ProfileCharacter id={selectedProfile.id} name={selectedProfile.name} imageUrl={selectedProfile.imageUrl} selection={false} backgroundColor="mandysPink"/>
-                </nav>
+                <NavBar />
             </div>
-            <main>
-                <h1>My favorites animes</h1>
-                <div className="anime-list-container">
+            <main className={styles.mainAnimeCollection}>
+                <h1>My collection of anime</h1>
+                <p>Here you'll find anime that hold cherished memories from my childhood, alongside others that have become recent favorites.</p>
+                <div className={styles.animeCollectionGrid}>
                     {animeList.map((anime) => (
                         <AnimeCard key={anime.id} id={anime.id} title={anime.title} imageUrl={anime.imageUrl} />
                     ))}
                 </div>
+                <footer>
+                    <p>Made by Crystal Durán</p>
+                </footer>
             </main>
         </>
 

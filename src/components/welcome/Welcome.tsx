@@ -25,7 +25,7 @@ const Welcome = ({ onNext }: WelcomeProps) => {
             <h1>Hello!</h1>
             <h2>Welcome to the collection of anime I've liked the most</h2>
             <h3>I hope you discover some new favorites among them!</h3>
-            <ProfileCharacter id={selectedProfile.id} name={selectedProfile.name} imageUrl={selectedProfile.imageUrl} selection={false} backgroundColor="ebony"/>
+            <ProfileCharacter id={selectedProfile.id} name={selectedProfile.name} imageUrl={selectedProfile.imageUrl} selection={false} backgroundColor="ebony" smaller={false}/>
         </div>
     );
 };

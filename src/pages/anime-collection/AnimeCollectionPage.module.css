@@ -1,0 +1,41 @@
+.mainAnimeCollection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+    padding-top: 60px;
+}
+
+
+.mainAnimeCollection h1 {
+    font-size: 34px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.mainAnimeCollection p {
+    font-size: 20px;
+    text-align: center;
+    max-width: 650px;
+    line-height: 30px;
+}
+
+.animeCollectionGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; 
+    justify-content: center; 
+}
+
+@media (max-width: 1200px) {
+    .animeCollectionGrid {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+@media (max-width: 800px) {
+    .animeCollectionGrid {
+        grid-template-columns: 1fr; 
+    }
+}
