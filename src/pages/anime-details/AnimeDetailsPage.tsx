@@ -101,8 +101,15 @@ const AnimeDetailsPage = () => {
             <main className={styles.mainAnimeDetails}>
                 <h5>Anime / {animeDetails?.title}</h5>
                 <h1>{animeDetails?.title} ({animeDetails?.title_japanese})</h1>
-                <div className={styles.sectionAnimeDetails}>
-                    <img src={animeDetails?.images.webp.image_url} alt={animeDetails?.title} />
+                <div className={styles.sectionPrincipalAnimeDetails}>
+                    <img src={animeDetails?.images.webp.image_url} alt={animeDetails?.title} width="225" height="325" />
+                    <div className={styles.synopsisAnimeDetails}>
+                        <h3>Synopsis</h3>
+                        <p>{animeDetails?.synopsis}</p>
+                    </div>
+                </div>
+
+                <div className={styles.sectionSecondaryAnimeDetails}>
                     <div className={styles.infoAnimeDetails}>
                         <h3>Overview</h3>
                         <p><strong>Type:</strong> {animeDetails?.type}</p>
@@ -113,22 +120,20 @@ const AnimeDetailsPage = () => {
                         <p><strong>Genres:</strong> {animeDetails?.genres.map(genre => genre.name).join(', ')}</p>
                         <p><strong>Demographics:</strong> {animeDetails?.demographics.map(demo => demo.name).join(', ')}</p>
                     </div>
-                    <div className={styles.synopsisAnimeDetails}>
-                        <h3>Synopsis</h3>
-                        <p>{animeDetails?.synopsis}</p>
-                    </div>
-                </div>
-
-
-                <h2>Characters</h2>
-                <div style={{ display: 'flex', flexWrap: 'wrap' }}>
-                    {characters.map((char, index) => (
-                        <div key={index} style={{ margin: '10px' }}>
-                            <img src={char.images.webp.image_url} alt={char.name} />
-                            <p>{char.name}</p>
+                    <div className={styles.sectionCharacters}>
+                        <h3>Characters</h3>
+                        <div className={styles.sectionCharactersContainer}>
+                            {characters.map((char, index) => (
+                                <div key={index} className={styles.characterCard}>
+                                    <img src={char.images.webp.image_url} alt={char.name} />
+                                    <p>{char.name}</p>
+                                </div>
+                            ))}
                         </div>
-                    ))}
+                    </div>
+
                 </div>
+
             </main>
         </>
 

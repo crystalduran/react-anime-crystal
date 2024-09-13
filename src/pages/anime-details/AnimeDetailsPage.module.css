@@ -1,3 +1,79 @@
 .mainAnimeDetails {
-    padding: 30px 60px;
+    padding: 20px 60px;
+}
+
+.mainAnimeDetails h1 {
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.mainAnimeDetails h5 {
+    font-size: 20px;
+    font-weight: 300;
+    color: rgba(234, 240, 246, 0.5);
+    margin-top: 4px;
+    padding-top: 10px;
+}
+
+.mainAnimeDetails h3 {
+    color: #F4B3B3;
+}
+
+.sectionPrincipalAnimeDetails {
+    display: flex;
+    flex-direction: row;
+    column-gap: 40px;
+    align-items: flex-start; /* Alinea los elementos al inicio para mantener consistencia */
+}
+
+.sectionPrincipalAnimeDetails img {
+    max-width: 225px; /* Fija un tamaño máximo para la imagen */
+    flex-shrink: 0; /* Evita que la imagen se achique */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+.synopsisAnimeDetails {
+    flex-grow: 1; /* Permite que la sinopsis ocupe el espacio restante */
+
+}
+
+.synopsisAnimeDetails p {
+    font-size: 14px;
+    line-height: 20px;
+    padding: 0;
+}
+
+.sectionSecondaryAnimeDetails {
+    display: flex;
+    flex-direction: row;
+    column-gap: 40px;
+    align-items: flex-start; /* Alinea los elementos al inicio para mantener consistencia */
+}
+
+.infoAnimeDetails {
+    flex-basis: 225px; /* Establece un ancho fijo o mínimo para el overview */
+    flex-shrink: 0; /* Evita que el overview se reduzca */
+    background-color: rgba(15, 13, 13, 0.932);
+}
+
+.infoAnimeDetails h3, p{
+    padding: 0 20px;
+}
+
+.sectionCharactersContainer {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.characterCard {
+    margin: 10px;
+}
+
+.sectionCharactersContainer img {
+    max-width: 160px; /* Fija un tamaño máximo para la imagen */
+    flex-shrink: 0; /* Evita que la imagen se achique */
+    height: auto; /* Mantiene la proporción de la imagen */
 }

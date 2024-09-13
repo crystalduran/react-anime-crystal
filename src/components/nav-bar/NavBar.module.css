@@ -5,8 +5,8 @@ nav {
     align-items: center;
     gap: 120px;
     background-color: var(--ebony);
-    padding: 22px 0;
-    font-size: 20px;
+    padding: 20px 0;
+    font-size: 18px;
 }
 
 .navLink:hover {
