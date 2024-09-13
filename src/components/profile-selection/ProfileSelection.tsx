@@ -1,6 +1,7 @@
 import ProfileCharacter from "../profile-character/ProfileCharacter";
 import characters from "../../data/charactersProfile.json";
 import styles from './ProfileSelection.module.css';
+
 const ProfileSelection = () => (
     <div>
         <h1>Select your profile to begin</h1>
