@@ -25,3 +25,15 @@ nav {
     text-decoration-color: var(--mandys-pink); 
     text-underline-offset: 18px; 
 }
+
+.externalLink {
+    text-decoration: none;
+    color: white;
+}
+
+.externalLink::after {
+    content: " ↗"; /* Unicode para una flecha */
+    font-size: 0.8em;
+    margin-left: 5px;
+    display: inline; /* Asegúrate de que la flecha se muestre en línea con el texto */
+}

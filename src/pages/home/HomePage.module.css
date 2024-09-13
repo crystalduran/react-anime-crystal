@@ -11,7 +11,7 @@
     text-align: center;
     min-height: 100vh; 
     margin: 0;
-    padding-top: 100px;
+    padding-top: 90px;
 }
 
 h1 {
@@ -21,7 +21,7 @@ h1 {
 }
 
 .componentsContainer footer {
-    margin-top: 130px;
+    margin-top: 128px;
     color: rgba(234, 240, 246, 0.5);
 }
 

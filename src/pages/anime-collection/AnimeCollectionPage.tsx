@@ -26,4 +26,4 @@ const AnimeCollectionPage = () => {
     );
 };
 
-export default AnimeCollectionPage
+export default AnimeCollectionPage;

@@ -24,7 +24,7 @@ const NavBar = () => {
         <nav className={styles.navBar}>
             <NavLink to="/anime-collection" className={({ isActive }) => isActive ? styles.activeLink : styles.navLink}>Anime Collection</NavLink>
             <NavLink to="/what-is-anime" className={({ isActive }) => isActive ? styles.activeLink : styles.navLink}>What is anime?</NavLink>
-            <NavLink to="/api" className={({ isActive }) => isActive ? styles.activeLink : styles.navLink}>API</NavLink>
+            <NavLink to="https://docs.api.jikan.moe/" className={styles.externalLink} target="_blank" rel="noopener noreferrer">API</NavLink>
             <NavLink to="/contact" className={({ isActive }) => isActive ? styles.activeLink : styles.navLink}>Contact</NavLink>
             <ProfileCharacter id={selectedProfile.id} name={selectedProfile.name} imageUrl={selectedProfile.imageUrl} selection={false} backgroundColor="mandysPink" smaller={true} />
         </nav>
