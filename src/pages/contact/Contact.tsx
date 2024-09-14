@@ -1,3 +1,4 @@
+import Footer from "../../components/footer/Footer";
 import NavBar from "../../components/nav-bar/NavBar";
 import styles from "./Contact.module.css";
 
@@ -30,6 +31,7 @@ const Contact = () => (
                 </div>
             </div>
         </main>
+        <Footer />
     </>
 
 );

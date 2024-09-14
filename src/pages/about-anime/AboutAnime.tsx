@@ -1,3 +1,4 @@
+import Footer from "../../components/footer/Footer";
 import NavBar from "../../components/nav-bar/NavBar";
 import styles from "./AboutAnime.module.css";
 
@@ -37,6 +38,7 @@ const AboutAnime = () => (
                 </div>
             </div>
         </div>
+        <Footer />
     </>
 
 );

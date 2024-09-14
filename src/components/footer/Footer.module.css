@@ -1,0 +1,27 @@
+.footerGeneral {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    background-color: rgba(15, 13, 13, 0.932);
+    padding: 30px 20px;
+    color: rgba(234, 240, 246, 0.8);
+    margin-top: 100px;
+}
+
+.footerCredits {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    font-size: 14px;
+}
+
+.footerSocials {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    margin-left: auto;
+    padding-right: 30px;
+}

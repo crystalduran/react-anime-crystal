@@ -2,6 +2,7 @@ import animeList from "../../data/anime.json";
 import NavBar from "../../components/nav-bar/NavBar";
 import AnimeCard from "../../components/anime-card/AnimeCard";
 import styles from "./AnimeCollectionPage.module.css";
+import Footer from "../../components/footer/Footer";
 
 const AnimeCollectionPage = () => {
     return (
@@ -17,10 +18,8 @@ const AnimeCollectionPage = () => {
                         <AnimeCard key={anime.id} id={anime.id} title={anime.title} imageUrl={anime.imageUrl} />
                     ))}
                 </div>
-                <footer>
-                    <p>Made by Crystal Durán</p>
-                </footer>
             </main>
+            <Footer />
         </>
 
     );
