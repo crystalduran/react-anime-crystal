@@ -16,7 +16,6 @@ const ProfileProvider = ({ children }: { children: ReactNode }) => {
             const timestamp = Number(storedTimestamp);
             const now = Date.now();
 
-            
             if (now - timestamp < EXPIRY_TIME) {
                 setSelectedProfileId(Number(storedProfileId));
             } else {
