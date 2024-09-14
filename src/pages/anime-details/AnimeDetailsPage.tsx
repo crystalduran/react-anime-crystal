@@ -126,12 +126,13 @@ const AnimeDetailsPage = () => {
                     <div className={styles.sectionCharacters}>
                         <h3>Characters</h3>
                         <div className={styles.sectionCharactersContainer}>
-                            {characters.map((char, index) => (
-                                <div key={index} className={styles.characterCard}>
-                                    <img src={char.images.webp.image_url} alt={char.name} />
-                                    <p>{char.name}</p>
-                                </div>
-                            ))}
+                            {characters.filter(char => !char.images.webp.image_url.includes('questionmark'))
+                                .map((char, index) => (
+                                    <div key={index} className={styles.characterCard}>
+                                        <img src={char.images.webp.image_url} alt={char.name} />
+                                        <p>{char.name}</p>
+                                    </div>
+                                ))}
                         </div>
                     </div>
 
