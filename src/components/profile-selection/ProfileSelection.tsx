@@ -3,7 +3,7 @@ import characters from "../../data/charactersProfile.json";
 import styles from './ProfileSelection.module.css';
 
 const ProfileSelection = () => (
-    <div>
+    <div className={styles.profileSelection}>
         <h1>Select your profile to begin</h1>
         <div className={styles.profilesContainer}>
             {characters.map(character => (

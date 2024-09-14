@@ -7,6 +7,7 @@ import AnimeDetailsPage from './pages/anime-details/AnimeDetailsPage';
 import { ProfileProvider } from './contexts/ProfileProvider';
 import './global.css'
 import AboutAnime from './pages/about-anime/AboutAnime';
+import Contact from './pages/contact/Contact';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
@@ -17,6 +18,7 @@ createRoot(document.getElementById('root')!).render(
           <Route path='/anime-collection' element={<AnimeCollectionPage />} />
           <Route path='/anime/:id' element={<AnimeDetailsPage />} />
           <Route path='/what-is-anime' element={<AboutAnime />} />
+          <Route path='/contact' element={<Contact />} />
         </Routes>
       </Router>
     </ProfileProvider>

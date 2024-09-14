@@ -1,0 +1,44 @@
+.mainContact {
+    padding: 20px 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.mainContact p {
+    color: rgba(234, 240, 246, 0.8);
+    padding: 0;
+}
+
+.contactCard {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    background-image: linear-gradient(var(--mandys-pink), #FF8EBB);
+    color: var(--ebony);
+    padding: 40px 45px;
+    margin-top: 45px;
+    border-radius: 6px;
+}
+
+.contactCard h3, h4 {
+    font-weight: 400;
+}
+
+.contactCard p {
+    color: var(--swamp);
+}
+
+.contactCard img {
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.socials {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: center;
+}

@@ -18,3 +18,9 @@ html, body {
   height: 100%; 
   background-color: var(--asphalt);
 }
+
+h1 {
+  font-size: 34px;
+  font-weight: 400;
+  margin: 0;
+}
