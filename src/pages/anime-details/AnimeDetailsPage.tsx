@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import NavBar from "../../components/nav-bar/NavBar";
 import Loading from '../../components/loading/Loading';
 import styles from "./AnimeDetailsPage.module.css";
+import Footer from '../../components/footer/Footer';
 
 
 interface AnimeDetails {
@@ -118,7 +119,9 @@ const AnimeDetailsPage = () => {
                         <p><strong>Status:</strong> {animeDetails?.status}</p>
                         <p><strong>Rating:</strong> {animeDetails?.rating}</p>
                         <p><strong>Genres:</strong> {animeDetails?.genres.map(genre => genre.name).join(', ')}</p>
-                        <p><strong>Demographics:</strong> {animeDetails?.demographics.map(demo => demo.name).join(', ')}</p>
+                        {animeDetails?.demographics?.length ? (
+                            <p><strong>Demographics:</strong> {animeDetails.demographics.map(demo => demo.name).join(', ')}</p>
+                        ) : null}
                     </div>
                     <div className={styles.sectionCharacters}>
                         <h3>Characters</h3>
@@ -135,6 +138,7 @@ const AnimeDetailsPage = () => {
                 </div>
 
             </main>
+            <Footer />
         </>
 
     );
