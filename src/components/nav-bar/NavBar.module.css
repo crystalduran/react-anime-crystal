@@ -37,3 +37,48 @@ nav {
     margin-left: 5px;
     display: inline; /* Asegúrate de que la flecha se muestre en línea con el texto */
 }
+
+.profileDropdown {
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+  
+.profileTrigger {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+  
+.dropdownArrow {
+    font-size: 12px;
+    margin-left: 8px; 
+}
+  
+.dropdownMenu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: var(--ebony);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+    margin-top: 23px;
+    padding: 10px 0;
+    border-radius: 4px;
+}
+  
+  /* Estilo de los items en el dropdown */
+.dropdownItem {
+    padding: 10px 20px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    color: white;
+}
+  
+.dropdownItem:hover {
+    color: var(--mandys-pink);
+}
