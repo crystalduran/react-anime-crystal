@@ -14,6 +14,7 @@ const NavBar = () => {
     const { selectedProfileId } = useProfile();
     const selectedProfile: Character | undefined = characters.find(character => character.id === selectedProfileId);
     const navigate = useNavigate();
+    const isAnimeRouteActive = location.pathname.startsWith('/anime');
 
     if (!selectedProfile) {
         navigate('/');
@@ -22,7 +23,7 @@ const NavBar = () => {
 
     return (
         <nav className={styles.navBar}>
-            <NavLink to="/anime-collection" className={({ isActive }) => isActive ? styles.activeLink : styles.navLink}>Anime Collection</NavLink>
+            <NavLink to="/anime-collection" className={({ isActive }) => isActive || isAnimeRouteActive ? styles.activeLink : styles.navLink}>Anime Collection</NavLink>
             <NavLink to="/what-is-anime" className={({ isActive }) => isActive ? styles.activeLink : styles.navLink}>What is anime?</NavLink>
             <NavLink to="https://docs.api.jikan.moe/" className={styles.externalLink} target="_blank" rel="noopener noreferrer">API</NavLink>
             <NavLink to="/contact" className={({ isActive }) => isActive ? styles.activeLink : styles.navLink}>Contact</NavLink>
