@@ -13,7 +13,24 @@ Project is created with:
 
 The API used to obtain anime data was **Jikan API** (version 4.0.0). This is an unofficial MyAnimeList API that allows access to complete information about anime and manga, since MyAnimeList does not offer a complete API by itself.
 
-API Documentation: 
+API Documentation: <https://docs.api.jikan.moe/>
 
-<http://discord.jikan.moe/>
+### Screenshots
+
+1. Select profile
+<img src="/assets/Screenshot_1_Crystals _favorite_anime.png" alt="Description">
+
+2. Anime collection
+<img src="/assets/Screenshot_2_Crystals _favorite_anime.png" alt="Description">
+
+3. Anime detail
+<img src="/assets/Screenshot_3_Crystals _favorite_anime.png" alt="Description">
+
+3. About anime
+<img src="/assets/Screenshot_4_Crystals _favorite_anime.png" alt="Description">
+
+4. Contact page
+<img src="/assets/Screenshot_5_Crystals _favorite_anime.png" alt="Description">
+
+
 
