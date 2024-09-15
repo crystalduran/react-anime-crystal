@@ -18,19 +18,19 @@ API Documentation: <https://docs.api.jikan.moe/>
 ### Screenshots
 
 1. Select profile
-<img src="/assets/Screenshot_1_Crystals _favorite_anime.png" alt="Description">
+<img src="public/assets/Screenshot_1_Crystals _favorite_anime.png" alt="Profile selection" width="700" height="325">
 
 2. Anime collection
-<img src="/assets/Screenshot_2_Crystals _favorite_anime.png" alt="Description">
+<img src="public/assets/Screenshot_2_Crystals _favorite_anime.png" alt="Description" width="700" height="810">
 
 3. Anime detail
-<img src="/assets/Screenshot_3_Crystals _favorite_anime.png" alt="Description">
+<img src="public/assets/Screenshot_3_Crystals _favorite_anime.png" alt="Description" width="700" height="810">
 
 3. About anime
-<img src="/assets/Screenshot_4_Crystals _favorite_anime.png" alt="Description">
+<img src="public/assets/Screenshot_4_Crystals _favorite_anime.png" alt="Description" width="700" height="518">
 
 4. Contact page
-<img src="/assets/Screenshot_5_Crystals _favorite_anime.png" alt="Description">
+<img src="public/assets/Screenshot_5_Crystals _favorite_anime.png" alt="Description" width="700" height="423">
 
 
 
