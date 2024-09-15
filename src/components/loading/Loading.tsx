@@ -2,13 +2,15 @@ import { useEffect } from "react";
 import styles from './Loading.module.css';
 
 interface LoadingProps {
-    onLoadingComplete: () => void;
+    onLoadingComplete?: () => void; 
 }
 
 const Loading = ({ onLoadingComplete }: LoadingProps) => {
     useEffect(() => {
-        const timer = setTimeout(onLoadingComplete, 3000);
-        return () => clearTimeout(timer);
+        if (onLoadingComplete) {
+            const timer = setTimeout(onLoadingComplete, 3000);
+            return () => clearTimeout(timer);
+        }
     }, [onLoadingComplete]);
 
     return (
