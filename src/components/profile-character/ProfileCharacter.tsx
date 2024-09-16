@@ -1,16 +1,8 @@
 import { useProfile } from "../../hooks/useProfile";
+import { ProfileImage } from "../../types/Profile";
 import styles from './ProfileCharacter.module.css';
 
-interface ProfileCharacterProps {
-    id: number;
-    name: string;
-    imageUrl: string;
-    selection: boolean;
-    backgroundColor: 'mandysPink' | 'ebony';
-    smaller: boolean;
-}
-
-const ProfileCharacter = ({ id, name, imageUrl, selection, backgroundColor, smaller }: ProfileCharacterProps) => {
+const ProfileCharacter = ({ id, name, imageUrl, selection, backgroundColor, smaller }: ProfileImage) => {
     const colorMap = {
         mandysPink: '#F4B3B3', 
         ebony: '#101624'

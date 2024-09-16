@@ -1,19 +1,14 @@
 import { useNavigate, NavLink } from "react-router-dom";
 import { useState } from 'react';
 import { useProfile } from "../../hooks/useProfile";
+import { ProfileData } from "../../types/Profile";
 import characters from "../../data/charactersProfile.json";
 import ProfileCharacter from "../profile-character/ProfileCharacter";
 import styles from './NavBar.module.css';
 
-interface Character {
-    id: number;
-    name: string;
-    imageUrl: string;
-}
-
 const NavBar = () => {
     const { selectedProfileId, setSelectedProfileId } = useProfile();
-    const selectedProfile: Character | undefined = characters.find(character => character.id === selectedProfileId);
+    const selectedProfile: ProfileData | undefined = characters.find(character => character.id === selectedProfileId);
     const [dropdownOpen, setDropdownOpen] = useState(false);
     const navigate = useNavigate();
     const isAnimeRouteActive = location.pathname.startsWith('/anime');
@@ -32,8 +27,6 @@ const NavBar = () => {
         localStorage.removeItem('profileId');
         navigate('/'); 
     };
-
-
 
     return (
         <nav className={styles.navBar}>
