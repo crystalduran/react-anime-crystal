@@ -40,3 +40,18 @@
     gap: 20px;
     padding: 30px;
 }
+
+@media (max-width: 480px) {
+    .mainAboutAnime {
+        padding: 40px;
+    }
+
+    .resourcesContainer {
+        gap: 30px;
+    }
+    
+    .imagesResources img {
+        width: 40px;
+        height: 40px;
+    }
+}

@@ -25,6 +25,19 @@ h1 {
     color: rgba(234, 240, 246, 0.5);
 }
 
+@media screen and (max-width:  480px) {
+    .componentsContainer footer {
+        margin-top: 180px;
+    }
+}
+
+
+@media screen and (min-width: 500px) and (max-width: 1024px) {
+    .componentsContainer footer {
+        margin-top: 300px;
+    }
+}
+
 
 
 

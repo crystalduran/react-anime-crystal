@@ -24,3 +24,11 @@ h1 {
   font-weight: 400;
   margin: 0;
 }
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 28px;
+    font-weight: 400;
+    margin: 0;
+  }
+}

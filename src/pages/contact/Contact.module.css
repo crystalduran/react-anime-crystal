@@ -42,3 +42,32 @@
     gap: 15px;
     justify-content: center;
 }
+
+
+@media (max-width: 480px) {
+    .mainContact {
+        height: 70vh;
+        text-align: center;
+        margin-top: 80px;
+        padding-top: 40px;
+    }
+
+    .contactCard {
+        flex-direction: column;
+    }
+    
+    .contactCard h3, h4 {
+        font-weight: 400;
+        font-size: 14px;
+    }
+    
+}
+
+
+@media screen and (min-width: 500px) and (max-width: 1024px) {
+    .mainContact {
+        height: 68vh;
+        padding: 20px 100px;
+    }
+
+}

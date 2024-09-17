@@ -37,7 +37,7 @@
 }
 
 .synopsisAnimeDetails p {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 25px;
     padding: 0;
 }
@@ -74,5 +74,68 @@
     max-width: 160px; 
     flex-shrink: 0; 
     height: auto; 
+}
+
+@media (max-width: 480px) {
+    .mainAnimeDetails {
+        padding: 20px 30px;
+    }
+
+    .sectionPrincipalAnimeDetails {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; 
+    }
+
+    .sectionSecondaryAnimeDetails {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; 
+    }
+
+    .sectionCharactersContainer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        grid-auto-rows: minmax(100px, auto);
+    }
+    
+    .characterCard {
+        margin: 10px;
+    }
+    
+    .sectionCharactersContainer img {
+        max-width: 100px; 
+        flex-shrink: 0; 
+        height: auto; 
+    }
+
+}
+
+
+@media screen and (min-width: 500px) and (max-width: 1024px) {
+    .sectionPrincipalAnimeDetails {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: flex-start; 
+    }
+
+    .sectionCharactersContainer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        grid-auto-rows: minmax(100px, auto);
+    }
+    
+    .characterCard {
+        margin: 10px;
+    }
+    
+    .sectionCharactersContainer img {
+        max-width: 100px; 
+        flex-shrink: 0; 
+        height: auto; 
+    }
+
 }
 

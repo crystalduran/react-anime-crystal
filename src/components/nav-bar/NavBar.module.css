@@ -1,4 +1,4 @@
-nav {
+.navBar {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -32,10 +32,10 @@ nav {
 }
 
 .externalLink::after {
-    content: " ↗"; /* Unicode para una flecha */
+    content: " ↗"; 
     font-size: 0.8em;
     margin-left: 5px;
-    display: inline; /* Asegúrate de que la flecha se muestre en línea con el texto */
+    display: inline; 
 }
 
 .profileDropdown {
@@ -68,7 +68,6 @@ nav {
     border-radius: 4px;
 }
   
-  /* Estilo de los items en el dropdown */
 .dropdownItem {
     padding: 10px 20px;
     background-color: transparent;
@@ -81,4 +80,65 @@ nav {
   
 .dropdownItem:hover {
     color: var(--mandys-pink);
+}
+
+.mobileNavBar {
+    display: none;
+    background-color: var(--ebony);
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10px;
+}
+
+.mobileNavLeft {
+    display: flex;
+    align-items: center;
+}
+
+.hamburger {
+    font-size: 24px;
+    background: none;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.activePage {
+    margin-left: 15px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.mobileMenu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    background-color: #080B12;
+    padding: 20px;
+}
+
+
+@media (max-width: 480px) {
+    .navBar {
+        display: none;
+    }
+
+    .mobileNavBar {
+        display: flex;
+    }
+}
+
+
+@media screen and (min-width: 500px) and (max-width: 1024px) {
+    .navBar {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 80px;
+        background-color: var(--ebony);
+        padding: 20px 0;
+        font-size: 16px;
+    }
 }

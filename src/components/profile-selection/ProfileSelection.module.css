@@ -1,3 +1,9 @@
+.profileSelection h1 {
+    font-weight: lighter;
+    font-size: 40px;
+    margin-bottom: 70px;
+}
+
 .profilesContainer {
     display: flex;
     flex-direction: row;
@@ -5,9 +11,45 @@
     font-size: 18px;
 }
 
-.profileSelection h1 {
-    font-weight: lighter;
-    font-size: 40px;
-    margin-bottom: 70px;
+@media screen and (max-width:  480px) {
+    .profilesContainer {
+        display: flex;
+        flex-direction: column;
+        row-gap: 60px;
+        font-size: 16px;
+        align-items: center;
+    }
+    
+    .profileSelection h1 {
+        font-weight: lighter;
+        font-size: 30px;
+        margin-bottom: 70px;
+    }
 }
 
+
+@media screen and (min-width: 500px) and (max-width: 1024px) {
+
+    .profileSelection h1 {
+        font-weight: lighter;
+        font-size: 40px;
+        margin-bottom: 70px;
+        text-align: center;
+    }
+
+    .profilesContainer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 1em;
+        font-size: 16px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .profileElement {
+        display: flex;
+        flex-direction: column;
+        gap:  10px;
+        align-items: center;
+    }
+}

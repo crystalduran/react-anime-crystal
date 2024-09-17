@@ -25,3 +25,17 @@
     margin-top: 2px;
     margin-bottom: 40px;
 }
+
+@media screen and (max-width:  480px) {
+    .welcomeContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 30px 40px;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 1024px) {
+
+}

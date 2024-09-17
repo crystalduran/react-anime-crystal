@@ -8,7 +8,7 @@ const ProfileSelection = () => (
         <div className={styles.profilesContainer}>
             {characters.map(character => (
                 <>
-                    <div>
+                    <div className={styles.profileElement}>
                         <ProfileCharacter key={character.id} id={character.id} name={character.name} imageUrl={character.imageUrl} selection={true} backgroundColor="ebony" smaller={false}/>
                         <p>{character.name}</p>
                     </div>
