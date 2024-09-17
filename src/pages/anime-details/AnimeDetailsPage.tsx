@@ -19,9 +19,9 @@ const AnimeDetailsPage = () => {
 
     return (
         <>
-            <div>
-                <NavBar />
-            </div>
+
+            <NavBar />
+
             <main className={styles.mainAnimeDetails}>
                 <h5>Anime / {animeDetails?.title}</h5>
                 <h1>{animeDetails?.title} ({animeDetails?.title_japanese})</h1>
@@ -49,6 +49,7 @@ const AnimeDetailsPage = () => {
                     <div className={styles.sectionCharacters}>
                         <h3>Characters</h3>
                         <div className={styles.sectionCharactersContainer}>
+                            {/* only filter out characters whose webp image does not contain questionmark inside in order to avoid including characters without their own image */}
                             {characters.filter(char => !char.images.webp.image_url.includes('questionmark'))
                                 .map((char, index) => (
                                     <div key={index} className={styles.characterCard}>
@@ -58,9 +59,7 @@ const AnimeDetailsPage = () => {
                                 ))}
                         </div>
                     </div>
-
                 </div>
-
             </main>
             <Footer />
         </>

@@ -17,7 +17,7 @@ export const useFetchAnime = (id: string) => {
                 const animeData = await fetchAnimeDetails(id);
                 setAnimeDetails(animeData);
 
-                // Simular un retraso entre las peticiones
+                // Simulate a delay between requests
                 await new Promise(resolve => setTimeout(resolve, 1000));
 
                 const characterData = await fetchAnimeCharacters(id);

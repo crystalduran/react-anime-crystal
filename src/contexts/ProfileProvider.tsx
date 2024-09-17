@@ -5,9 +5,11 @@ const PROFILE_ID_KEY = 'profileId';
 const TIMESTAMP_KEY = 'profileIdTimestamp';
 const EXPIRY_TIME = 30 * 60 * 1000; 
 
+// The ProfileProvider component manages the selected profile ID, persists it in localStorage, and ensures it's valid based on the expiry time
 const ProfileProvider = ({ children }: { children: ReactNode }) => {
     const [selectedProfileId, setSelectedProfileId] = useState<number | null>(null);
 
+    // useEffect hook runs on component mount to check if there's a stored profile ID and if it's still valid
     useEffect(() => {
         const storedProfileId = localStorage.getItem(PROFILE_ID_KEY);
         const storedTimestamp = localStorage.getItem(TIMESTAMP_KEY);
@@ -15,7 +17,8 @@ const ProfileProvider = ({ children }: { children: ReactNode }) => {
         if (storedProfileId && storedTimestamp) {
             const timestamp = Number(storedTimestamp);
             const now = Date.now();
-
+            
+            // If the stored profile ID is within the valid expiry time, set it as the selected profile
             if (now - timestamp < EXPIRY_TIME) {
                 setSelectedProfileId(Number(storedProfileId));
             } else {
@@ -25,6 +28,7 @@ const ProfileProvider = ({ children }: { children: ReactNode }) => {
         }
     }, []);
 
+     // useEffect hook runs whenever the selectedProfileId state changes, storing the profile ID and current timestamp in localStorage
     useEffect(() => {
         if (selectedProfileId !== null) {
             localStorage.setItem(PROFILE_ID_KEY, selectedProfileId.toString());

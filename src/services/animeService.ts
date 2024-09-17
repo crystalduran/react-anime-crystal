@@ -16,6 +16,7 @@ export const fetchAnimeCharacters = async (id: string): Promise<Character[]> => 
         throw new Error(`HTTP error: Status ${response.status}`);
     }
     const data = await response.json();
+    // Extract the first 10 characters and map each one to create an array of Character objects having only the name and images
     const characters: Character[] = data.data.slice(0, 10).map((char: CharacterData) => ({
         name: char.character.name,
         images: char.character.images,

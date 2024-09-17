@@ -7,9 +7,7 @@ import Footer from "../../components/footer/Footer";
 const AnimeCollectionPage = () => {
     return (
         <>
-            <div>
-                <NavBar />
-            </div>
+            <NavBar />
             <main className={styles.mainAnimeCollection}>
                 <h1>My collection of anime</h1>
                 <p>Here you'll find anime that hold cherished memories from my childhood, alongside others that have become recent favorites.</p>
@@ -21,7 +19,6 @@ const AnimeCollectionPage = () => {
             </main>
             <Footer />
         </>
-
     );
 };
 
